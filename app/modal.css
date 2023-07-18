@@ -1,0 +1,9 @@
+.ant-modal-content {
+  padding: 0;
+  background-color: 'purple';
+}
+.modal-wrapper {
+  padding: 0;
+  color: 'red';
+  background-color: 'purple';
+}

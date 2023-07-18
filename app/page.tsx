@@ -2,6 +2,7 @@
 
 import React, { useState, CSSProperties } from 'react'
 import { Button, Modal, Layout, Space, Col, Row } from 'antd'
+import './modal.css'
 
 const { Content } = Layout
 
@@ -13,7 +14,11 @@ const spaceCss: CSSProperties = {
 }
 
 const modalCss: CSSProperties = {
-  display: 'flex'
+  padding: '2em',
+  backgroundColor: 'purple'
+}
+
+const modalInfographicCss: CSSProperties = {
 }
 
 const Home: React.FC = () => {
@@ -56,11 +61,14 @@ const Home: React.FC = () => {
         <Modal
           open={modalOpen}
           onOk={handleOk}
+          style={{padding: 0}}
           onCancel={handleCancel}
           centered
+          footer={null}
+          wrapClassName='modal-wrapper'
         >
           <Row>
-            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12} style={modalInfographicCss}>
               col1
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
