@@ -2,6 +2,8 @@
 
 import React, { useState, CSSProperties } from 'react'
 import { Button, Modal, Layout, Space, Col, Row, Form, Input, Checkbox, Typography, Select } from 'antd'
+import CylinderShape from './components/cylindershape'
+import ModalCheckItems from './components/modalcheckitems'
 import './page.css'
 
 const { Content } = Layout
@@ -56,7 +58,7 @@ const Home: React.FC = () => {
     >
       <Content>
         <Button type="primary" onClick={showModal} size="large">
-          JUST CLICK IT
+          CLICK ME!
         </Button>
 
         <Modal
@@ -73,36 +75,14 @@ const Home: React.FC = () => {
               xs={24} sm={24} md={12} lg={12} xl={12}
               className="modal-infographics"
             >
-
-              <svg width="97" height="177" viewBox="0 0 97 177" fill="none" xmlns="http://www.w3.org/2000/svg" className='cylinder-shape'>
-              <mask id="mask0_1672_8" maskUnits="userSpaceOnUse" x="0" y="0" width="97" height="177">
-              <rect width="97" height="177" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1672_8)">
-              <rect x="8" y="120.137" width="160" height="60" rx="30" transform="rotate(-45 8 120.137)" fill="url(#paint0_linear_1672_8)"/>
-              </g>
-              <defs>
-              <linearGradient id="paint0_linear_1672_8" x1="11.2789" y1="135.641" x2="132.901" y2="195.038" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#47CEEE"/>
-              <stop offset="1" stop-color="#4CD305"/>
-              </linearGradient>
-              </defs>
-              </svg>
-
+              <CylinderShape className='cylinder-shape'></CylinderShape>
               <Space direction="vertical" size="large">
                 <Text className="modal-title">Talk to a career expert</Text>
                 <Title>Schedule 1:1 free counselling</Title>
                 <Title level={4} style={{ maxWidth: "70%" }}>
                   Start your journey to becoming a Full-Stack Developer!
                 </Title>
-                <ul>
-                  <li>Experience Outcome-based Immersive Learning</li>
-                  <li>
-                    Globally Recognized Accredidations, Case Studies and
-                    Real-World Simulations
-                  </li>
-                  <li>Training by Renowned Industry Experts</li>
-                </ul>
+                <ModalCheckItems />
               </Space>
             </Col>
             <Col
