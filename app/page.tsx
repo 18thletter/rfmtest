@@ -118,8 +118,8 @@ const Home: React.FC = () => {
             <Col
               xs={24}
               sm={24}
-              md={12}
-              lg={12}
+              md={24}
+              lg={24}
               xl={12}
               className="modal-infographics"
             >
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
               <Space direction="vertical" size="large">
                 <Text className="modal-title">Talk to a career expert</Text>
                 <Title>Schedule 1:1 free counselling</Title>
-                <Title level={4} style={{ maxWidth: "70%" }}>
+                <Title level={4} style={{ maxWidth: "80%" }}>
                   Start your journey to becoming a Full-Stack Developer!
                 </Title>
                 <ModalCheckItems />
@@ -136,8 +136,8 @@ const Home: React.FC = () => {
             <Col
               xs={24}
               sm={24}
-              md={12}
-              lg={12}
+              md={24}
+              lg={24}
               xl={12}
               className="modal-form-container"
             >
