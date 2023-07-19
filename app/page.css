@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-wrapper .ant-modal-content {
+  padding: 0;
+}
+
+.modal-infographics {
+  padding: 4rem;
+  background-color: #04075b;
+  color: white;
+  border-radius: 8px;
+}
+
+.modal-infographics h1, .modal-infographics h2, .modal-infographics h3, .modal-infographics h4 {
+  color: white;
+}
+
+.modal-infographics .modal-title {
+  color: #47d242;
+  border: 1px solid #47d242;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.modal-form-container {
+  padding: 4rem 2rem;
+}
+
+.modal-submit-button {
+  color: white;
+}
+
+/* this selects the modal form privacy text */
+#signup-form .ant-space-vertical:last-child {
+  text-align: center
+}
+
+.cylinder-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
